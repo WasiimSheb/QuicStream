@@ -1,32 +1,74 @@
-# Project Documentation: Building a Simple QUIC Protocol in Python
+---
 
-## Introduction
-In this project, we implemented a simplified version of the QUIC (Quick UDP Internet Connection) protocol in Python. QUIC is an emerging transport protocol developed by Google that aims to improve web performance by reducing latency and improving security. Our project focuses on building a basic QUIC client and server to demonstrate key features of the protocol.
+# QuicStream: Lightweight QUIC Protocol in Python
 
-## Overview
-The project consists of three main components:
-1. *QUIC Client*: Responsible for initiating connections to the server, sending requests, and receiving responses.
-2. *QUIC Server*: Listens for incoming connections from clients, processes requests, and sends back responses.
-3. *Packet Handling*: Defines classes and functions for encoding and decoding QUIC packets, managing sockets, and handling stream payloads.
+This repository contains an implementation of a lightweight version of the QUIC (Quick UDP Internet Connection) protocol in Python. QUIC is a transport protocol developed by Google that aims to improve web performance by reducing latency and enhancing security.
 
-## Implementation Details
-### QUIC Client
-- Establishes a connection to the server using QUIC.
-- Sends requests for data over multiple streams.
-- Receives responses from the server and handles stream data.
+## Features
 
-### QUIC Server
-- Listens for incoming connections from clients.
-- Accepts requests and processes them, generating random data for streams.
-- Sends back responses containing stream data.
+- **QUIC Client**: Initiates connections to the server, sends requests, and receives responses.
+- **QUIC Server**: Listens for incoming connections, processes requests, and sends back responses.
+- **Packet Handling**: Defines classes and functions for encoding and decoding QUIC packets, managing sockets, and handling stream payloads.
 
-### Packet Handling
-- Defines classes for encoding and decoding QUIC packets.
-- Manages sockets for communication between client and server.
-- Handles stream payloads for transferring data over QUIC.
+## Installation
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/WasiimSheb/QuicStream.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd QuicStream
+    ```
+
+## Usage
+
+Run the server:
+```bash
+python Server.py
+```
+
+Run the client:
+```bash
+python Client.py
+```
+
+## Files and Directories
+
+- **Client.py**: Implementation of the QUIC client.
+- **Server.py**: Implementation of the QUIC server.
+- **Packets.py**: Classes and functions for packet encoding and decoding.
+- **UniTest.py**: Unit tests for the implementation.
+
+## Example
+
+### Running the Server
+
+Start the QUIC server by executing:
+```bash
+python Server.py
+```
+
+### Running the Client
+
+In another terminal, run the QUIC client to connect to the server and send a request:
+```bash
+python Client.py
+```
 
 ## Unit Testing
-We conducted unit testing to ensure the correctness and reliability of our implementation. Test cases were designed to cover various scenarios, including packet encoding and decoding, socket functionality, and stream payload handling.
 
-## Conclusion
-By building a simplified QUIC protocol in Python, we gained a deeper understanding of network protocols and transport layer technologies. This project demonstrates the fundamental concepts of QUIC and provides a solid foundation for further exploration and development in this area.
+Unit tests are provided to ensure the correctness and reliability of the implementation. Run the tests using:
+```bash
+python UniTest.py
+```
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request.
+
+## Contact
+
+For any inquiries, please contact: Wasimshebalny@gmail.com
+
+---
