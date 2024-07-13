@@ -69,6 +69,6 @@ Contributions are welcome! Please open an issue or submit a pull request.
 
 ## Contact
 
-For any inquiries, please contact: Wasimshebalny@gmail.com
+For any inquiries, please contact: anthonisdb@gmail.com, Wasimshebalny@gmail.com, shifaakh28@gmail.com.
 
 ---
